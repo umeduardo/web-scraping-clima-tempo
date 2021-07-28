@@ -1,8 +1,8 @@
-# web-scraping-clima-tempo
-Desenvolvimento de um web scraping para consulta de dados do site ClimaTempo. 
+# Web Scraping Clima Tempo
+Desenvolvimento de uma API web scraping para consulta de dados do site ClimaTempo utilizando BeautifulSoup e Flask
 
 
-#Instalação
+# Instalação
 
 ### Instale os pacotes necessários
 ```
