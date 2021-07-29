@@ -30,7 +30,7 @@ def _sanitize_value(data_type: str, value: str) -> str:
 
 
 @app.route("/previsao", methods=('GET',))
-def get_previsao():
+def get_previsao() -> Response:
     """
     Return weather forecast by city id
     eg:
@@ -60,7 +60,7 @@ def get_previsao():
             _value = _sanitize_value(_name, _value[0].get_text(strip=True))
             dados[_name] = _value
             
-        return Response(response=json.dumps(dados), mimetype="text/plain")
+        return Response(response=json.dumps(dados), mimetype="application/json")
 
 
 @app.route("/cidades", methods=('GET',))
